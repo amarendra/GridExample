@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, columnsToFit());
         mRecyclerGridView.setLayoutManager(gridLayoutManager);
+        mRecyclerGridView.setFocusable(false);
 
         mNumbers = new int[100];
         for (int i = 0; i < mNumbers.length; i++) {
